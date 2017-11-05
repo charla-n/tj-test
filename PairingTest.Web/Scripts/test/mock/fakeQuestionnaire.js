@@ -12,7 +12,7 @@ var __extends = (this && this.__extends) || (function () {
 Object.defineProperty(exports, "__esModule", { value: true });
 var fakeAPI_1 = require("./fakeAPI");
 var constants = require("../../utils/constants");
-var FakeQuestionnaire = /** @class */ (function (_super) {
+var FakeQuestionnaire = (function (_super) {
     __extends(FakeQuestionnaire, _super);
     function FakeQuestionnaire() {
         return _super.call(this) || this;
@@ -24,11 +24,11 @@ var FakeQuestionnaire = /** @class */ (function (_super) {
     FakeQuestionnaire.prototype.mockGetQuestionFailure = function () {
         this.mockFailure(constants.QUESTION);
     };
-    FakeQuestionnaire.MOCK_QUESTION_DATA = {
-        Title: "Geography Questions",
-        Questions: ["What is the capital of Cuba?", "What is the capital of France?", "What is the capital of Germany?", "What is the capital of Poland?"],
-    };
     return FakeQuestionnaire;
 }(fakeAPI_1.default));
+FakeQuestionnaire.MOCK_QUESTION_DATA = {
+    Title: "Geography Questions",
+    Questions: ["What is the capital of Cuba?", "What is the capital of France?", "What is the capital of Germany?", "What is the capital of Poland?"],
+};
 exports.default = FakeQuestionnaire;
 //# sourceMappingURL=fakeQuestionnaire.js.map

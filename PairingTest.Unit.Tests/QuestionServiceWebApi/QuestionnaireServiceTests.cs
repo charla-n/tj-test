@@ -32,9 +32,10 @@ namespace PairingTest.Unit.Tests.QuestionServiceWebApi
             var questionnaireService = new QuestionnaireService(new QuestionnaireRepository());
 
             var question = questionnaireService.GetQuestionByID(0);
+            var question2 = questionnaireService.GetQuestionByID(1);
 
-            Assert.NotNull(question);
             Assert.AreEqual("What is the capital of Cuba?", question);
+            Assert.AreEqual("What is the capital of France?", question2);
         }
 
         [Test]

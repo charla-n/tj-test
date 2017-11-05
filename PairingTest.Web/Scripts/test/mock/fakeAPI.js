@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var MockAdapter = require('axios-mock-adapter');
 var axios_1 = require("axios");
 var constants_1 = require("../../utils/constants");
-var FakeAPI = /** @class */ (function () {
+var FakeAPI = (function () {
     function FakeAPI() {
         // fake axios
         this.apiMock = new MockAdapter(axios_1.default);
