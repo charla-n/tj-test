@@ -1,5 +1,4 @@
 ﻿var MockAdapter = require('axios-mock-adapter');
-var nock = require('nock');
 import axios from 'axios';
 import { API_URL } from '../../utils/constants'
 
